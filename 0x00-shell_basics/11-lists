@@ -1,9 +1,2 @@
 #!/bin/bash
-# List files in long format for current directory
-ls -la
-# Get the parent directory
-parent_dir=$(dirname "$(pwd)")
-# List files in long format for parent directory
-ls -la "$parent_dir"
-# List files in long format for /boot directory
-ls -la /boot
+ls -la . "$(dirname "$(pwd)")" /boot
